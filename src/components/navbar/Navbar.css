@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+  }
+  
+  .logo {
+    margin-right: 50px;
+  }
+  
+  .nav-links {
+    line-height: 19px;
+    opacity: 0.95;
+    color: #fff;
+  }

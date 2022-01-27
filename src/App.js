@@ -1,7 +1,8 @@
 import './App.css';
 import bg from './background.svg';
-import Navbar from './components/Navbar';
-import Posts from './components/Posts';
+import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
+import Posts from './components/posts/Posts';
 
 
 
@@ -14,6 +15,7 @@ function App() {
 			<div className="content">
 				<Navbar />
 				<Posts />
+				<Footer />
 			</div>
 		</div>
 	);

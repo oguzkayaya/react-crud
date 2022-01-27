@@ -1,0 +1,39 @@
+.posts {
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    margin-top: 230px;
+    padding: 30px;
+    height: 610px;
+    overflow-y: auto;
+  
+  }
+  
+  .post {
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+  }
+  
+  .post:not(:last-child) {
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  }
+  
+  .post-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .post-id {
+    line-height: 16px;
+    color: #525F7F;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  
+  .post-title {
+    line-height: 16px;
+    color: #32325D;
+  }
