@@ -1,82 +1,82 @@
-
 .footer {
-    margin-top: 180px;
-  }
-  
-  .footer-top {
-    padding-bottom: 81px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
-  }
-  
-  .footer-bottom {
-    padding-top: 37px;
-    padding-bottom: 53px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-social {
-    display: flex;
-    gap: 12px;
-    margin-right: 55px;
-  }
-  
-  .footer-text-header {
-    font-size: 24px;
-    line-height: 33px;
-    letter-spacing: -0.45px;
-    color: #00CDAC;
-    margin-bottom: 44px;
-  }
-  
-  .footer-text-description {
-    font-size: 22px;
-    line-height: 26px;
-    color: #32325D;
-  }
-  
-  .footer-icon {
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 7px 14px rgba(50, 50, 93, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.08);
-    border-radius: 4px;
-  }
-  
-  .twitter-icon {
-    background: #1DA1F2;
-  }
-  
-  .facebook-icon {
-    background: #3B5999;
-  }
-  
-  .dribbble-icon {
-    background: #EA4C89;
-  }
-  
-  .github-icon {
-    background: #222222;
-  }
-  
-  .footer-bottom-text {
-    line-height: 16px;
-    letter-spacing: -0.4px;
-    color: #525F7F;
-    font-weight: 600;
-  }
-  
-  .footer-text-logo {
-    color: #00CDAC;
-  }
-  
-  .footer-bottom-post {
-    letter-spacing: -0.4px;
-    color: #8898AA;
-  }
+  margin-top: auto;
+  padding-top: 180px;
+}
+
+.footer-top {
+  padding-bottom: 81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+.footer-bottom {
+  padding-top: 37px;
+  padding-bottom: 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-right: 55px;
+}
+
+.footer-text-header {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.45px;
+  color: #00CDAC;
+  margin-bottom: 44px;
+}
+
+.footer-text-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #32325D;
+}
+
+.footer-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 7px 14px rgba(50, 50, 93, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.twitter-icon {
+  background: #1DA1F2;
+}
+
+.facebook-icon {
+  background: #3B5999;
+}
+
+.dribbble-icon {
+  background: #EA4C89;
+}
+
+.github-icon {
+  background: #222222;
+}
+
+.footer-bottom-text {
+  line-height: 16px;
+  letter-spacing: -0.4px;
+  color: #525F7F;
+  font-weight: 600;
+}
+
+.footer-text-logo {
+  color: #00CDAC;
+}
+
+.footer-bottom-post {
+  letter-spacing: -0.4px;
+  color: #8898AA;
+}
