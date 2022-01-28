@@ -7,10 +7,63 @@
     padding: 30px;
     height: 610px;
     flex-shrink: 0;
-    text-align: center;
+}
+
+.name {
+    font-size: 28px;
+    line-height: 38px;
+    color: #32325D;
+    margin-bottom: 5px;
+}
+
+.city {
+    font-size: 16px;
+    line-height: 19px;
+    color: #32325D;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.user-info {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.114286px;
+    color: #525F7F;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    color: #ADB5BD;
+    width: 95px;
+}
+
+.line {
+    background: #E9ECEF;
+    margin-top: 93px;
+    height: 1px;
+    width: 100%;
+}
+
+.profile-bottom-text {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #525F7F;
+    padding-left: 67px;
+    padding-right: 67px;
+}
+
+.profile-show-more {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #4A90E2;
+    margin-top: 20px;
 }
