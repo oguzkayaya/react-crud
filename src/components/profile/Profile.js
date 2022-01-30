@@ -11,7 +11,6 @@ function Profile() {
         fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`)
             .then((response) => response.json())
             .then((json) => {
-                console.log(json);
                 setUserInfo(json);
             });
     }, [])

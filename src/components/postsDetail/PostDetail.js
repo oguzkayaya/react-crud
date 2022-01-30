@@ -7,19 +7,25 @@ function PostDetail({ }) {
     const params = useParams();
 
     const [postDetail, setPostDetail] = useState({});
+    const [userInfo, setUserInfo] = useState({});
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
             .then((response) => response.json())
             .then((json) => {
                 setPostDetail(json);
+                fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`)
+                    .then((profileResponse) => profileResponse.json())
+                    .then((profileJson) => {
+                        setUserInfo(profileJson);
+                    });
             });
     }, [])
     return (
         <div className="post-detail">
             <div><h2>{postDetail.title}</h2></div>
             <div>{postDetail.body}</div>
-            <div><Link to={`/profile/${postDetail.userId}`}>user: {postDetail.userId}</Link></div>
+            <div><Link to={`/profile/${postDetail.userId}`}>user: {userInfo.name}</Link></div>
         </div>
     )
 }

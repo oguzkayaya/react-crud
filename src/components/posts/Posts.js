@@ -30,15 +30,19 @@ function Posts() {
 
     const openUpdateModal = (post) => {
         setShowDetail(true);
+        setShowDelete(false);
         setUpdatedTitle(post.title);
         setUpdatedBody(post.body);
         setUpdatedId(post.id);
         setUpdatedUserId(post.userId);
+        window.scrollTo({ behavior: 'smooth', top: 0 })
     }
 
     const openDeleteModal = (post) => {
         setShowDelete(true);
+        setShowDetail(false);
         setDeletedPost(post);
+        window.scrollTo({ behavior: 'smooth', top: 0 })
     }
 
     const updatePost = () => {
@@ -85,12 +89,14 @@ function Posts() {
             <div className="posts">
                 {posts.map(post => (
                     <div key={post.id} className="post">
-                        <div className="post-id">{post.id}</div>
-                        <div className="post-title">{post.title}</div>
+                        <div className="post-text">
+                            <div className="post-id">{post.id}</div>
+                            <div className="post-title">{post.title}</div>
+                        </div>
                         <div className="post-buttons">
-                            <button className="btn-info" onClick={() => { navigate(`/post/${post.id}`) }}>DETAY</button>
-                            <button className="btn-success" onClick={() => { openUpdateModal(post) }}>DÜZENLE</button>
-                            <button className="btn-danger" onClick={() => { openDeleteModal(post) }}>SİL</button>
+                            <button className="btn btn-info" onClick={() => { navigate(`/post/${post.id}`) }}>DETAY</button>
+                            <button className="btn btn-success" onClick={() => { openUpdateModal(post) }}>DÜZENLE</button>
+                            <button className="btn btn-danger" onClick={() => { openDeleteModal(post) }}>SİL</button>
                         </div>
                     </div>
                 ))}
@@ -117,7 +123,7 @@ function Posts() {
                         </div>
                     </div>
                     <div className="modal-footer">
-                        <button className="btn-update" onClick={updatePost}>Güncelle</button>
+                        <button className="btn btn-update" onClick={updatePost}>Güncelle</button>
                     </div>
                 </div>
             )}
@@ -130,8 +136,8 @@ function Posts() {
                             <div className="post-title">{deletedPost.title}</div>
                         </div>
                         <div className="modal-footer">
-                            <button className="btn-danger" onClick={deletePost}>Sil</button>
-                            <button className="btn-update" onClick={() => { setShowDelete(false) }}>İptal</button>
+                            <button className="btn btn-danger" onClick={deletePost}>Sil</button>
+                            <button className="btn btn-update" onClick={() => { setShowDelete(false) }}>İptal</button>
                         </div>
                     </div>
                 )

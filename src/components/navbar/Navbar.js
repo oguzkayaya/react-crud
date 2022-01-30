@@ -13,11 +13,13 @@ function Navbar() {
             </div>
             <div className="nav-links">
                 <div className="nav-link">
-                    Posts
+                    <Link to="/">
+                        Posts
+                    </Link>
                 </div>
             </div>
             <div className="login-button">
-                <button className="btn-login">Login</button>
+                <button className="btn btn-login">Login</button>
             </div>
         </div>
     )

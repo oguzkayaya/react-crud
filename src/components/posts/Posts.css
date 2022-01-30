@@ -14,16 +14,23 @@
   display: flex;
   align-items: center;
   padding: 28px 0;
+  flex-wrap: wrap;
+  row-gap: 16px;
 }
 
 .post:not(:last-child) {
   border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
 }
 
+.post-text {
+  display: flex;
+}
+
 .post-buttons {
   margin-left: auto;
   display: flex;
   gap: 20px;
+  min-width: 290px;
 }
 
 .post-id {
@@ -40,14 +47,16 @@
 
 .detail-modal {
   position: absolute;
-  width: 500px;
+  max-width: 500px;
   min-height: 421px;
+  width: 100%;
   top: 155px;
   left: 50%;
   transform: translateX(-50%);
   background: #FFFFFF;
   box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
+
 }
 
 .modal-title {
@@ -116,7 +125,8 @@
 
 .delete-modal {
   position: absolute;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   top: 155px;
   left: 50%;
   transform: translateX(-50%);
