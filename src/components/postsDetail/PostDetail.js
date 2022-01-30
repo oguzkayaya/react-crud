@@ -14,7 +14,8 @@ function PostDetail({ }) {
             .then((response) => response.json())
             .then((json) => {
                 setPostDetail(json);
-                fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`)
+                console.log(json);
+                fetch(`https://jsonplaceholder.typicode.com/users/${json.userId}`)
                     .then((profileResponse) => profileResponse.json())
                     .then((profileJson) => {
                         setUserInfo(profileJson);
